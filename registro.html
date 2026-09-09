@@ -58,7 +58,7 @@
             <div class="mb-3">
               <input type="password" class="form-control" name="confirm_password" placeholder="Confirmar Contraseña" required />
             </div>
-            <h3 class="h6 mb-3 fw-semibold text-start">Estilo de decoración preferido:</h3>
+            <h3 class="h6 mb-3 fw-semibold text-start text-success">Estilo de decoración preferido:</h3>
             <fieldset class="form-group mb-3" style="flex-direction: row; display: flex; gap: 10px;">
             <div>
               <input type="checkbox" id="minimalista" name="minimalista"/>
@@ -75,6 +75,7 @@
             <div>
               <input type="checkbox" id="vintage" name="vintage" />
               <label for="vintage">Vintage</label>
+            </div>
             <div>
               <input type="checkbox" id="rustico" name="rustico" />
               <label for="rustico">Rústico</label>
@@ -84,6 +85,12 @@
               <label for="moderno">Moderno</label>
             </div>
             </fieldset>
+            <p class="text-muted small">* Puede escoger múltiples estilos según prefiera.</p>
+
+            <h3 class="h6 mb-3 fw-semibold text-start text-success">Direcciones de envío</h3>
+            <div id="direcciones"></div>
+            <button type="button" class="btn btn-outline-success btn-sm mb-3" id="btn-agregar">Agregar dirección</button>
+
             <button type="submit" class="btn btn-success w-100">Registrarse</button>
           </form>
         </div>
@@ -95,5 +102,6 @@
         <p class="mb-0">© 2026 Tienda DecoHogar - Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="js/registro.js"></script>
   </body>
 </html>
