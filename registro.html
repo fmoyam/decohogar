@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body class="d-flex flex-column min-vh-100 bg-light" style="background-image: url('assets/fondo.png'); background-repeat: repeat;">
+  <body
+    class="d-flex flex-column min-vh-100 bg-light"
+    style="background-image: url(&quot;assets/fondo.png&quot;); background-repeat: repeat">
     <header class="navbar-header bg-success border-bottom py-2 px-4 shadow-sm">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid px-0">
@@ -19,7 +21,14 @@
             <img src="assets/favicon.png" alt="Logo" width="40" height="40" />
             <span class="fw-bold text-white">Tienda DecoHogar</span>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Menú de navegación">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,49 +56,77 @@
         <div class="card-body p-4 text-center">
           <form action="registro.html" method="post" class="mb-4">
             <div class="mb-3">
-              <input type="text" class="form-control" name="nombre" placeholder="Nombre completo" required />
+              <input
+                type="text"
+                class="form-control"
+                id="inputNombre"
+                name="nombre"
+                placeholder="Nombre completo"
+                required />
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required />
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                name="email"
+                placeholder="Correo Electrónico"
+                required />
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" name="password" placeholder="Contraseña" required />
+              <input
+                type="password"
+                class="form-control"
+                id="passwordInput"
+                name="password"
+                placeholder="Contraseña"
+                required />
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" name="confirm_password" placeholder="Confirmar Contraseña" required />
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPasswordInput"
+                name="confirm_password"
+                placeholder="Confirmar Contraseña"
+                required />
             </div>
-            <h3 class="h6 mb-3 fw-semibold text-start text-success">Estilo de decoración preferido:</h3>
-            <fieldset class="form-group mb-3" style="flex-direction: row; display: flex; gap: 10px;">
-            <div>
-              <input type="checkbox" id="minimalista" name="minimalista"/>
-              <label for="minimalista">Minimalista</label>
-            </div>
-            <div>
-              <input type="checkbox" id="industrial" name="industrial" />
-              <label for="industrial">Industrial</label>
-            </div>
-            <div>
-              <input type="checkbox" id="nordico" name="nordico" />
-              <label for="nordico">Nórdico</label>
-            </div>
-            <div>
-              <input type="checkbox" id="vintage" name="vintage" />
-              <label for="vintage">Vintage</label>
-            </div>
-            <div>
-              <input type="checkbox" id="rustico" name="rustico" />
-              <label for="rustico">Rústico</label>
-            </div>
-            <div>
-              <input type="checkbox" id="moderno" name="moderno" />
-              <label for="moderno">Moderno</label>
-            </div>
+            <h3 class="h6 mb-3 fw-semibold text-start text-success">
+              Estilo de decoración preferido:
+            </h3>
+            <fieldset class="form-group mb-3" style="flex-direction: row; display: flex; gap: 10px">
+              <div>
+                <input type="checkbox" id="minimalista" name="minimalista" />
+                <label for="minimalista">Minimalista</label>
+              </div>
+              <div>
+                <input type="checkbox" id="industrial" name="industrial" />
+                <label for="industrial">Industrial</label>
+              </div>
+              <div>
+                <input type="checkbox" id="nordico" name="nordico" />
+                <label for="nordico">Nórdico</label>
+              </div>
+              <div>
+                <input type="checkbox" id="vintage" name="vintage" />
+                <label for="vintage">Vintage</label>
+              </div>
+              <div>
+                <input type="checkbox" id="rustico" name="rustico" />
+                <label for="rustico">Rústico</label>
+              </div>
+              <div>
+                <input type="checkbox" id="moderno" name="moderno" />
+                <label for="moderno">Moderno</label>
+              </div>
             </fieldset>
             <p class="text-muted small">* Puede escoger múltiples estilos según prefiera.</p>
 
             <h3 class="h6 mb-3 fw-semibold text-start text-success">Direcciones de envío</h3>
             <div id="direcciones"></div>
-            <button type="button" class="btn btn-outline-success btn-sm mb-3" id="btn-agregar">Agregar dirección</button>
+            <button type="button" class="btn btn-outline-success btn-sm mb-3" id="btn-agregar">
+              Agregar dirección
+            </button>
 
             <button type="submit" class="btn btn-success w-100">Registrarse</button>
           </form>
@@ -97,8 +134,10 @@
       </div>
     </main>
 
-    <footer class="border-top py-3 text-center text-muted small mt-auto" style="background-color: #4EDF9B;">
-      <div class="container text-white" >
+    <footer
+      class="border-top py-3 text-center text-muted small mt-auto"
+      style="background-color: #4edf9b">
+      <div class="container text-white">
         <p class="mb-0">© 2026 Tienda DecoHogar - Todos los derechos reservados.</p>
       </div>
     </footer>
