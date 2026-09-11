@@ -25,6 +25,6 @@ formLogin.addEventListener("submit", (e) => {
     return;
   }
 
-  alert("Iniciando sesión");
+  alert("Ha iniciado sesión. Bienvenido/a!");
   window.location.href = "index.html";
 });

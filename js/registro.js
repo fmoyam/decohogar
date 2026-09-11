@@ -114,21 +114,30 @@ formRegistro.addEventListener('submit', (event) => {
     return;
   }
 
-  mapaRegistro.forEach((datos) => {
-    if (datos[1].toLowerCase() === email.toLowerCase()) {
-      alert('Este correo electrónico ya se encuentra registrado.');
-      return;
-    }
-  });
+  const emailDuplicado = Array.from(mapaRegistro.values()).some(
+    (datos) => datos[1].toLowerCase() === email.toLowerCase()
+  );
+  if (emailDuplicado) {
+    alert('Este correo electrónico ya se encuentra registrado.');
+    return;
+  }
+
+  const estilosSeleccionados = [...document.querySelectorAll('input[type=checkbox]:checked')]
+    .map((cb) => cb.name);
+
+  if (estilosSeleccionados.length === 0) {
+    alert('Debe seleccionar al menos un estilo de decoración.');
+    return;
+  }
 
   const datosUsuario = [
     nombre,
     email,
-    password,
+    contra,
     estilosSeleccionados,
   ];
 
-  const clave = "usuario_" + { contadorRegistro };
+  const clave = `usuario_${contadorRegistro}`;
   mapaRegistro.set(clave, datosUsuario);
 
   alert("Registro exitoso");
