@@ -1,0 +1,19 @@
+body {
+  background-image: url("fondo.png");
+  background-repeat: repeat;
+}
+
+main.container > .card {
+  width: 100%;
+  max-width: 550px;
+}
+
+fieldset.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer {
+  background-color: #4edf9b;
+}
